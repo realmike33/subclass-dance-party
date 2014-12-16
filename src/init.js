@@ -27,6 +27,7 @@ $(document).ready(function(){
       $("body").width() * Math.random(),
       Math.random() * 100
     );
+    console.log(dancer.$node)
     $('body').append(dancer.$node);
 
     window.dancers.push(dancer);
@@ -37,9 +38,4 @@ $(document).ready(function(){
       window.dancers[i].lineUp();
     }
   });
-
-  $(function(){
-    $('.dancingImages').draggable();
-  });
-
 });
