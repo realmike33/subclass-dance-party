@@ -18,3 +18,12 @@ var MakeDancer = function(top, left, timeBetweenSteps){
     };
     this.$node.css(styleSettings);
   };
+
+  MakeDancer.prototype.lineUp = function(top, left) {
+    var random = Math.random() * 700;
+    var newStyle = {
+      top : random,
+      left: 200
+    };
+    this.$node.css(newStyle);
+  };
