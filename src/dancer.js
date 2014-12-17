@@ -27,3 +27,15 @@ var MakeDancer = function(top, left, timeBetweenSteps){
     };
     this.$node.css(newStyle);
   };
+
+  MakeDancer.prototype.randomize = function(top, left) {
+    var random = Math.random() * 700;
+    var randomL = Math.random() * 1000;
+    var newStyle = {
+      top : random,
+      left: randomL
+    };
+    this.$node.css(newStyle);
+  };
+
+

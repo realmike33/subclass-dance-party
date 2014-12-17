@@ -38,4 +38,11 @@ $(document).ready(function(){
       window.dancers[i].lineUp();
     }
   });
+
+  $('.randomButton').on('click', function(){
+    for(var i = 0; i < window.dancers.length; i++){
+      window.dancers[i].randomize();
+    }
+  });
+
 });
